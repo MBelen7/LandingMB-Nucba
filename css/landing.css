@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+/* bg colores */
+--background-color: #32004B;
+--primary: #3405A1;
+--secondary: #E9E4EE;
+--nav-bg: #D0B6F2;
+
+/* Textos colores */
+--text-pri: #C9BFE9;
+--text-secu:#E3E2E8;
+
+/* Tipografia */
+--montse: "Montserrat"
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing:border-box;
+    font-family: var(--montse);
+   }
+   
+   body{
+    background-color: var(--background-color);
+   }
+
+   body > header{
+       width: 100vw;
+       position:fixed;
+       top: 0;
+       left: 0;
+       background-color:#D0B6F2;
+       display:flex;
+       padding: 1rem 1rem;
+       justify-content:center;
+       align-items:center;
+       z-index: 8;
+       height: 4rem;
+   }
+   
+   body > header > a {
+       display: inline-flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   body > header > a img {
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+
+.logo {
+    width: 2.25rem;
+   
+    }
+
+   body > header > nav {
+       display: flex;
+       flex: 1;
+       justify-content: flex-end;
+       gap: 1.25rem;
+   }
+
+   body > header > nav a {
+    text-decoration:underline;
+    color:#3405A1;
+    font-weight: 500;
+ }
+
+ body > header > nav a:first-child {
+    color:#3405A1;
+    font-weight: 900;  
+ }
+
+ body > header > form {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+ }
+
