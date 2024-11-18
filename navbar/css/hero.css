@@ -1,0 +1,47 @@
+#hero{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    max-width: 1200px;
+    padding-top: 10vh;
+}
+
+#hero h4{
+    color: transparent;
+    background-image: var(--gradient-text);
+    background-clip: text;
+    font-size: 3rem;
+}
+
+#hero p{
+    font-family: var(--Montserrat);
+    color: var(--text-pri);
+    width: calc(75% - 6rem); 
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+#hero picture{
+    display: block;
+}
+
+#hero picture >img {
+    object-fit: contain;
+    aspect-ratio: 1/1;
+    justify-content: flex-end;
+    height: 320px;
+}
+
+@media (max-width:768){
+   #hero p{
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    #hero picture > img{
+        max-width: 50%;
+        margin-top: 20px;
+    }
+    
+}

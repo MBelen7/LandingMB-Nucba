@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* bg colores */
+  --background-color: #32004b;
+  --primary: #3405a1;
+  --secondary: #e9e4ee;
+  --nav-bg: #d0b6f2;
+
+  /* Textos colores */
+  --text-pri: #c9bfe9;
+  --text-secu: #e3e2e8;
+
+  /* Tipografia */
+  --delius: "Delius Unicase", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+
+  /*Decoracion */
+  --gradient-text: linear-gradient(to top, #7f20ed, #f27cd0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: var(--montserrat);
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
