@@ -31,34 +31,8 @@
   background-image: var(--gradient-text);
   background-clip: text;
   position: relative;
-}
+  animation:focus-in-expand-fwd 8s cubic-bezier(.25,.46,.45,.94) forwards infinite}
 
-#aboutme h4 span::after{
-  content: "";
-  background-color:var(--background-color);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  right: 0;
-  transform: scaleX(1);
-  transform-origin: center right;
-  animation: reveal 1s steps(11) forwards;
-  z-index: 0;
-}
-
-#aboutme h4 span::before{
-  content: "";
-  background-color:var(--gradient-text);
-  position: absolute;
-  width: 0.05rem;
-  height: 100%;
-  bottom: 0.07rem;
-  right: 7rem;
-  left:0;
-  animation: line-typing 1s steps(11) forwards;
-  z-index: 1;
-}
 
 #aboutme p {
   font-size: 1rem;
@@ -70,27 +44,24 @@
   padding: 10px;
 }
 
-#aboutme > picture img {
-  display: block;
+#fondo{
+  display:flex;
+  padding: 0;
+  padding-top: 5rem;
+  width: 1920px;
+  justify-content: center;
+  align-items: center;
 }
 
-#aboutme > picture img {
-  margin: auto;
-  padding: 1.1rem;
+
+
+#fondo img {
   width: 300px;
-  aspect-ratio: 1/1;
-  border-radius: 2rem;
-  background-color: var(--imgcard);
-}
+  height: auto;
+  object-fit: cover;
+  animation:kenburns-top 8s ease-in-out alternate-reverse forwards infinite;}
 
-#aboutme picture{
-  transform: scale(1);
-  transition: all 150ms ease-in-out;
-}
 
-#aboutme picture:hover{
-  transform: scale(1.1);
-}
 
 @media (max-width: 768px) {
   #aboutme {

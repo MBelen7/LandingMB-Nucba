@@ -1,0 +1,49 @@
+#skills{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 10rem 0rem;
+  }
+
+#skill > header{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+#skills h2{
+    color: var(--text-secu);
+    font-family: var(--delius);
+    font-size: 2rem;
+  }
+
+#skills ul{
+width: 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#skills ul li{
+  display: flex;
+  width: 100px;
+  height: 200px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--text-secu);
+  text-align: center;
+  padding: 4rem;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+
+#skills svg{
+    background-image: var(--gradient-text);
+    border-radius: 1rem;
+}

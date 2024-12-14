@@ -2,15 +2,16 @@
 
 :root {
   /* bg colores */
-  --background-color: #0c011d;
+  --background-color: #0c011d,#170a51;
   --primary: #3405a1;
   --secondary: #e9e4ee;
   --nav-bg: #e1b6db;
-  --imgcard: rgb(94, 27, 114);
+  --imgcard: rgb(13, 2, 20);
 
   /* Textos colores */
   --text-pri: #a95ff8;
   --text-secu: #ef8cc7;
+  --text-footer:#f27cd0;
 
   /* Tipografia */
   --delius: "Delius Unicase", sans-serif;
@@ -19,8 +20,11 @@
   /*Decoracion */
   --gradient-text: linear-gradient(to left, #7f20ed, #f27cd0);
   --gradient-navflo: linear-gradient(to bottom, #14032e, #5e48bf);
-  --gradient-nav: linear-gradient(to bottom, #5e48bf, #14032e);
+  --gradient-nav: linear-gradient(to bottom, #330b57, #391274);
+
+
 }
+
 
 * {
   margin: 0;
@@ -47,8 +51,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #0c011d;
-}
+  animation:  color-change-2x 5s ease-out infinite alternate both};
+  
 
 img {
   width: 100%;
@@ -59,3 +63,14 @@ img {
 a {
   text-decoration: none;
 }
+
+body{
+  width: 100%;    
+  display: grid;
+  gap: 1rem;
+  grid-template-columns:1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 15px;
+  grid-template-areas:"hero" "miinfo" "skills" "misredes"
+  }

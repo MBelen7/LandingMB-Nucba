@@ -42,12 +42,7 @@
   padding: 4rem;
   gap: 1rem;
   border-radius: 1rem;
-}
-
-#miinfo ul li:hover{
-  animation: slide-right 1.3s 2s ease-in-out forwards,
-  fade 1s 0s ease-in-out forwards;
-}
+  animation: shadow-drop-2-center 8s cubic-bezier(.25,.46,.45,.94) forwards infinite};
 
 
 #miinfo ul li p {
